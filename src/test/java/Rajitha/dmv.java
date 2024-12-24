@@ -1,4 +1,4 @@
-package testscenarios;
+package Rajitha;
 
 import java.awt.Window;
 
@@ -31,12 +31,19 @@ public class dmv {
 				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/div/div[3]/div/button")).click();
 				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/main/div/div/div[1]/div[1]/button")).click();
 				
-				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[1]/div/div[5]/div/div/div/div[1]/div/input")).sendKeys("rajitha.amra@gmail.com");
+				Actions act =  new Actions(driver);
+				act.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div[2]/button/span/"))).click().perform();
 				
-				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[1]/div/div[6]/div/div/div/div[1]/div/input")).sendKeys("rajitha.amra@gmail.com");
+				
+				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[1]/div/div[5]/div/div/div/div[1]/div/input")).sendKeys("rajitha.amraj@gmail.com");
+				
+				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[1]/div/div[6]/div/div/div/div[1]/div/input")).sendKeys("rajitha.amraj@gmail.com");
 				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[2]/div[1]/div[4]/div[1]/div/div/div[1]/div[1]/input")).sendKeys("75078");
 				driver.findElement(By.xpath("/html/body/div[1]/div/main/div/div/section/div/main/div/section/div[2]/div/form/div/div[2]/div[2]/div/div[2]/button")).click()
-				;		
+				;	
+				driver.manage().window().maximize();
 	}
+	
+	
 
 }
