@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CBT_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="safariTestResults(failed)">
+    <parameter name="browserName" value="safari"/>
+    <classes>
+      <class name="testNGScenarios.CrossBrowserTesting_FBlogin">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testNGScenarios.CrossBrowserTesting_FBlogin -->
+    </classes>
+  </test> <!-- safariTestResults(failed) -->
+</suite> <!-- Failed suite [CBT_Suite] -->
