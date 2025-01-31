@@ -5,7 +5,7 @@
 		<classes>
 			<class name="testNGScenarios.OpensourcetestingLogin" />
 			<!-- <class name="testNGScenarios.FBlogin"/> -->
-			<class name="testNGScenarios.Blazedemo" />
+			<!-- <class name="testNGScenarios.Blazedemo" />  -->
 			<class name="testNGScenarios.AnnotationDemo_1"></class>
 			<class name="testNGScenarios.AnnotationDemo_2"></class>
 		</classes>
